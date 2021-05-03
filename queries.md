@@ -31,7 +31,7 @@ db.companies.find({founded_year :{$lte : 2010 }, "ipo.valuation_amount" : {$gte 
 
 ### 5. All the companies that have less than 1000 employees and have been founded before 2005. Order them by the number of employees and limit the search to 10 companies.
 
-db.companies.find({number_of_employees :{$lte : 1000 }, founded_year : {$lt : 2005}}.sort({number_of_employees:1}).limnit(10))
+db.companies.find({number_of_employees :{$lte : 1000 }, founded_year : {$lt : 2005}}.sort({number_of_employees:1}).limit(10))
 
 <!-- Your Code Goes Here -->
 
